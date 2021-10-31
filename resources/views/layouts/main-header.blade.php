@@ -27,36 +27,22 @@
 										</div>
 									</a>
 									<div class="dropdown-menu dropdown-menu-left dropdown-menu-arrow" x-placement="bottom-end">
-										<a href="#" class="dropdown-item d-flex ">
-											<span class="avatar  ml-3 align-self-center bg-transparent"><img src="{{URL::asset('assets/img/flags/french_flag.jpg')}}" alt="img"></span>
+										<a href="{{ url('locale/ar') }}" class="dropdown-item d-flex ">
+											<span class="avatar  ml-3 align-self-center bg-transparent"></span>
 											<div class="d-flex">
-												<span class="mt-2">French</span>
+												<span class="mt-2">Arabic</span>
 											</div>
 										</a>
-										<a href="#" class="dropdown-item d-flex">
-											<span class="avatar  ml-3 align-self-center bg-transparent"><img src="{{URL::asset('assets/img/flags/germany_flag.jpg')}}" alt="img"></span>
+										<a href="{{ url('locale/en') }}" class="dropdown-item d-flex ">
+											<span class="avatar  ml-3 align-self-center bg-transparent"></span>
 											<div class="d-flex">
-												<span class="mt-2">Germany</span>
+												<span class="mt-2">English</span>
 											</div>
 										</a>
-										<a href="#" class="dropdown-item d-flex">
-											<span class="avatar ml-3 align-self-center bg-transparent"><img src="{{URL::asset('assets/img/flags/italy_flag.jpg')}}" alt="img"></span>
-											<div class="d-flex">
-												<span class="mt-2">Italy</span>
-											</div>
-										</a>
-										<a href="#" class="dropdown-item d-flex">
-											<span class="avatar ml-3 align-self-center bg-transparent"><img src="{{URL::asset('assets/img/flags/russia_flag.jpg')}}" alt="img"></span>
-											<div class="d-flex">
-												<span class="mt-2">Russia</span>
-											</div>
-										</a>
-										<a href="#" class="dropdown-item d-flex">
-											<span class="avatar  ml-3 align-self-center bg-transparent"><img src="{{URL::asset('assets/img/flags/spain_flag.jpg')}}" alt="img"></span>
-											<div class="d-flex">
-												<span class="mt-2">spain</span>
-											</div>
-										</a>
+										
+										
+										
+										
 									</div>
 								</div>
 							</li>

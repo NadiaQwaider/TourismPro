@@ -20,9 +20,9 @@
 					</div>
 				</div>
 				<ul class="side-menu" >
-					<li class="side-item side-item-category">المعلومات الرئيسية</li>
+					<li class="side-item side-item-category">{{__('messages.BASEINFORMATION')}}</li>
 					<li class="slide">
-					<a class="side-menu__item" href="{{ url('/' . $page='profile.view') }}"><span class="side-menu__label"><i class="mdi mdi-account-card-details" ></i> الملف الشخصي </span></a>
+					<a class="side-menu__item" href="{{ url('/' . $page='profile.view') }}"><span class="side-menu__label"><i class="mdi mdi-account-card-details" ></i> {{__('messages.PROFILE')}} </span></a>
 					</li>
 					<li class="slide">
 						<a class="side-menu__item" data-toggle="slide" href="{{ url('/' . $page='#') }}"><span class="side-menu__label"><i class="icon ion-md-globe"></i> إدارة الموقع</span><i class="angle fe fe-chevron-down"></i></a>
