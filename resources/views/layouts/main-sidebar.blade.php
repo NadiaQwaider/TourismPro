@@ -14,7 +14,7 @@
 							<img alt="user-img" class="avatar avatar-xl brround" src="{{URL::asset('assets/img/faces/6.jpg')}}"><span class="avatar-status profile-status bg-green"></span>
 						</div>
 						<div class="user-info">
-							<h4 class="font-weight-semibold mt-3 mb-0">اسم المستخدم</h4>
+							<h4 class="font-weight-semibold mt-3 mb-0">{{__('messages.USERNAME')}} </h4>
 							<span class="mb-0 text-muted"> </span>
 						</div>
 					</div>
@@ -25,94 +25,94 @@
 					<a class="side-menu__item" href="{{ url('/' . $page='profile.view') }}"><span class="side-menu__label"><i class="mdi mdi-account-card-details" ></i> {{__('messages.PROFILE')}} </span></a>
 					</li>
 					<li class="slide">
-						<a class="side-menu__item" data-toggle="slide" href="{{ url('/' . $page='#') }}"><span class="side-menu__label"><i class="icon ion-md-globe"></i> إدارة الموقع</span><i class="angle fe fe-chevron-down"></i></a>
+						<a class="side-menu__item" data-toggle="slide" href="{{ url('/' . $page='#') }}"><span class="side-menu__label"><i class="icon ion-md-globe"></i> {{__('messages.WEBSITE MANAGEMENT')}}</span><i class="angle fe fe-chevron-down"></i></a>
 						<ul class="slide-menu">
-							<li><a class="slide-item" href="{{ url('/' . $page='website-management.main-info.view') }}"> المعلومات الأساسية والتواصل</a></li>
-							<li><a class="slide-item" href="{{ url('/' . $page='website-management.about.view') }}">حول الهيئة</a></li>
-							<li><a class="slide-item" href="{{ url('/' . $page='website-management.news.view') }}">الأخبار</a></li>
-							<li><a class="slide-item" href="{{ url('/' . $page='website-management.decisions.view') }}">القرارات</a></li>
-							<li><a class="slide-item" href="{{ url('/' . $page='website-management.images.view') }}">الصور</a></li>
+							<li><a class="slide-item" href="{{ url('/' . $page='website-management.main-info.view') }}">{{__('messages.BASIC INFORMATION AND CONTACT')}}</a></li>
+							<li><a class="slide-item" href="{{ url('/' . $page='website-management.about.view') }}">{{__('messages.ABOUT AUTHORITY')}}</a></li>
+							<li><a class="slide-item" href="{{ url('/' . $page='website-management.news.view') }}">{{__('messages.NEWS')}}</a></li>
+							<li><a class="slide-item" href="{{ url('/' . $page='website-management.decisions.view') }}">{{__('messages.DECISIONS')}}</a></li>
+							<li><a class="slide-item" href="{{ url('/' . $page='website-management.images.view') }}">{{__('messages.IMAGES')}}</a></li>
 						</ul>
 					</li>	
 					<li class="slide">							
-						<a class="side-menu__item" href="{{ url('/' . $page='users.view') }}"><span class="side-menu__label"><i class="mdi mdi-account-multiple" ></i>مستخدمو النظام</span></a>
+						<a class="side-menu__item" href="{{ url('/' . $page='users.view') }}"><span class="side-menu__label"><i class="mdi mdi-account-multiple" ></i>{{__('messages.SYSTEM USERS')}}</span></a>
 					</li>
-					<li class="side-item side-item-category">البنى الأساسية </li>
+					<li class="side-item side-item-category">{{__('messages.BASE STRUCTURES')}} </li>
 					<li class="slide">
-						<a class="side-menu__item" data-toggle="slide" href="{{ url('/' . $page='#') }}"><span class="side-menu__label"> <i class="la la-home"></i> المنشآت</span><i class="angle fe fe-chevron-down"></i></a>
+						<a class="side-menu__item" data-toggle="slide" href="{{ url('/' . $page='#') }}"><span class="side-menu__label"> <i class="la la-home"></i> {{__('messages.FACILITIES')}}</span><i class="angle fe fe-chevron-down"></i></a>
 						<ul class="slide-menu">
-							<li><a class="slide-item"  href="{{ url('/' . $page='main-structures.facilities.Facilities-types.view') }}"> أنواع المنشآت</a></li>
-							<li><a class="slide-item"  href="{{ url('/' . $page='main-structures.facilities.Facilities-specializations.view') }}"> أنماط التخصصات الداخلية </a></li>
+							<li><a class="slide-item"  href="{{ url('/' . $page='main-structures.facilities.Facilities-types.view') }}"> {{__('messages.TYPES OF FACILITIES')}}</a></li>
+							<li><a class="slide-item"  href="{{ url('/' . $page='main-structures.facilities.Facilities-specializations.view') }}">{{__('messages.PATTERNS OF INTERNAL SPECIALTIES')}} </a></li>
 						</ul>
 					</li>
 					<li class="slide">
-						<a class="side-menu__item"  href="{{ url('/' . $page='#') }}"><span class="side-menu__label"><i class="si si-location-pin"></i> المراكز</span><i class="angle fe fe-chevron-down"></i></a>
+						<a class="side-menu__item"  href="{{ url('/' . $page='#') }}"><span class="side-menu__label"><i class="si si-location-pin"></i> {{__('messages.CENTERS')}}</span><i class="angle fe fe-chevron-down"></i></a>
 						<ul class="slide-menu">
-							<li><a class="slide-item"  href="{{ url('/' . $page='main-structures.centers.centers-specializations.view') }}"> أنواع المراكز</a></li>
-							<li ><a class="slide-item"  href="{{ url('/' . $page='main-structures.centers.centers-types.view') }}">أنواع أقسام وتبعيات الموظفين</a></li>
+							<li><a class="slide-item"  href="{{ url('/' . $page='main-structures.centers.centers-types.view') }}"> {{__('messages.TYPES OF CENTERS')}}</a></li>
+							<li ><a class="slide-item"  href="{{ url('/' . $page='main-structures.centers.centers-specializations.view') }}">{{__('messages.TYPES OF STAFF DEPENDICIES')}}</a></li>
 						</ul>
 					</li>
 					<li class="slide">
-						<a class="side-menu__item" data-toggle="slide" href="{{ url('/' . $page='#') }}"> <span class="side-menu__label"><i class="si si-people"></i> المستخدمين</span><i class="angle fe fe-chevron-down"></i></a>
+						<a class="side-menu__item" data-toggle="slide" href="{{ url('/' . $page='#') }}"> <span class="side-menu__label"><i class="si si-people"></i>{{__('messages.USERS')}} </span><i class="angle fe fe-chevron-down"></i></a>
 						<ul class="slide-menu">
-							<li ><a class="slide-item"  href="{{ url('/' . $page='main-structures.users-types.students-types.view') }}"> أنواع الطلاب</a></li>
-							<li ><a class="slide-item"  href="{{ url('/' . $page='main-structures.users-types.teachers-types.view') }}">أنواع الأساتذة</a></li>
-							<li><a class="slide-item"  href="{{ url('/' . $page='main-structures.users-types.employees-types.view') }}">أنواع الموظفين</a></li>
+							<li ><a class="slide-item"  href="{{ url('/' . $page='main-structures.users-types.students-types.view') }}">{{__('messages.TYPES OF STUDENTS')}} </a></li>
+							<li ><a class="slide-item"  href="{{ url('/' . $page='main-structures.users-types.teachers-types.view') }}">{{__('messages.TYPES OF TEACHERS')}}</a></li>
+							<li><a class="slide-item"  href="{{ url('/' . $page='main-structures.users-types.employees-types.view') }}">{{__('messages.TYPES OF EMPLOYEES')}}</a></li>
 
 						</ul>
 					</li>
 					<li class="slide">
-						<a class="side-menu__item" data-toggle="slide" href="{{ url('/' . $page='#') }}"><span class="side-menu__label"><i class="si si-layers"></i> التقسيمات الأكاديمية</span><i class="angle fe fe-chevron-down"></i></a>
+						<a class="side-menu__item" data-toggle="slide" href="{{ url('/' . $page='#') }}"><span class="side-menu__label"><i class="si si-layers"></i>{{__('messages.ACADIMIC DIVISIONS')}} </span><i class="angle fe fe-chevron-down"></i></a>
 						<ul class="slide-menu">
-							<li ><a class="slide-item" href="{{ url('/' . $page='main-structures.Academic Distributions.Types-of-specialties.view') }}"> أنواع التخصصات الدراسية</a></li>
-							<li ><a class="slide-item"  href="{{ url('/' . $page='main-structures.Academic Distributions.Types-of-stages.view') }}">أنواع المراحل الدراسية</a></li>
-							<li><a class="slide-item"  href="{{ url('/' . $page='main-structures.Academic Distributions.Types-of-divisions.view') }}">أنواع الشعب الدراسية</a></li>
-							<li ><a class="slide-item" " href="{{ url('/' . $page='main-structures.Academic Distributions.Types-of-semesters.view') }}">أنواع الفصول الدراسية</a></li>
+							<li ><a class="slide-item" href="{{ url('/' . $page='main-structures.Academic Distributions.Types-of-specialties.view') }}">{{__('messages.TYPES OF STUDY MAJORS')}}</a></li>
+							<li ><a class="slide-item"  href="{{ url('/' . $page='main-structures.Academic Distributions.Types-of-stages.view') }}">{{__('messages.TYPES OF STAGES')}}</a></li>
+							<li><a class="slide-item"  href="{{ url('/' . $page='main-structures.Academic Distributions.Types-of-divisions.view') }}">{{__('messages.TYPES OF DIVISIONS')}}</a></li>
+							<li ><a class="slide-item" " href="{{ url('/' . $page='main-structures.Academic Distributions.Types-of-semesters.view') }}">{{__('messages.TYPES OF CHAPTERS')}}</a></li>
 
 
 						</ul>
 					</li>			
 					<li class="slide">
-						<a class="side-menu__item" data-toggle="slide" href="{{ url('/' . $page='#') }}"><span class="side-menu__label"><i class="fe fe-book-open"></i> المواد</span><i class="angle fe fe-chevron-down"></i></a>
+						<a class="side-menu__item" data-toggle="slide" href="{{ url('/' . $page='#') }}"><span class="side-menu__label"><i class="fe fe-book-open"></i>{{__('messages.SUBJECTS')}} </span><i class="angle fe fe-chevron-down"></i></a>
 						<ul class="slide-menu">
-							<li ><a class="slide-item"  href="{{ url('/' . $page='main-structures.subjects.subjects-info.view') }}">معلومات المواد التدريسية </a></li>
-							<li ><a class="slide-item"  href="{{ url('/' . $page='main-structures.subjects.subjects-types.view') }}">أنواع المواد التدريبية</a></li>
-							<li><a class="slide-item"  href="{{ url('/' . $page='main-structures.subjects.grades-systems.view') }}">أنواع أنظمة توزيع العلامات</a></li>
+							<li ><a class="slide-item"  href="{{ url('/' . $page='main-structures.subjects.subjects-info.view') }}">{{__('messages.SUBJECTS INFORMATION')}} </a></li>
+							<li ><a class="slide-item"  href="{{ url('/' . $page='main-structures.subjects.subjects-types.view') }}">{{__('messages.TYPES OF TRAINING SUBJECTS')}}</a></li>
+							<li><a class="slide-item"  href="{{ url('/' . $page='main-structures.subjects.grades-systems.view') }}">{{__('messages.TYPES OF GRADE SYSTEM ')}}</a></li>
 
 
 						</ul>
 					</li>	
 					<li class="slide">
-						<a class="side-menu__item" data-toggle="slide" href="{{ url('/' . $page='#') }}"><span class="side-menu__label"><i class="fe fe-award"></i> الشهادات</span><i class="angle fe fe-chevron-down"></i></a>
+						<a class="side-menu__item" data-toggle="slide" href="{{ url('/' . $page='#') }}"><span class="side-menu__label"><i class="fe fe-award"></i>{{__('messages.CERTIFICATES')}} </span><i class="angle fe fe-chevron-down"></i></a>
 						<ul class="slide-menu">
-							<li><a class="slide-item"  href="{{ url('/' . $page='main-structures.certificates.classification-of-certificates.view') }}">تصنيفات الشهادات المتوفرة</a></li>
-							<li><a class="slide-item"  href="{{ url('/' . $page='main-structures.certificates.types-of-certificates.view') }}">أنواع الشهادات المتوفرة</a></li>
+							<li><a class="slide-item"  href="{{ url('/' . $page='main-structures.certificates.classification-of-certificates.view') }}">{{__('messages.CLASSIFICATION OF CERTIFICATES')}}</a></li>
+							<li><a class="slide-item"  href="{{ url('/' . $page='main-structures.certificates.types-of-certificates.view') }}">{{__('messages.TYPES OF STAFF DEPENDICIES')}}</a></li>
 						</ul>
 					</li>
 					<li class="slide">
-						<a class="side-menu__item" data-toggle="slide" href="{{ url('/' . $page='#') }}"><span class="side-menu__label"><i class="typcn typcn-calendar-outline"></i>الجداول الدراسية</span><i class="angle fe fe-chevron-down"></i></a>
+						<a class="side-menu__item" data-toggle="slide" href="{{ url('/' . $page='#') }}"><span class="side-menu__label"><i class="typcn typcn-calendar-outline"></i>{{__('messages.STUDY SCHEDUALS')}}</span><i class="angle fe fe-chevron-down"></i></a>
 						<ul class="slide-menu">
-							<li><a class="slide-item"  href="{{ url('/' . $page='main-structures.study-schedules.subjects-schedules.view') }}">جداول توزيع المواد</a></li>
-							<li><a class="slide-item"  href="{{ url('/' . $page='main-structures.study-schedules.studytime-schedules.view') }}">جداول الدوام</a></li>
-							<li><a class="slide-item"  href="{{ url('/' . $page='main-structures.study-schedules.exams-schedules.view') }}">جداول الفحوصات السنوية </a></li>
+							<li><a class="slide-item"  href="{{ url('/' . $page='main-structures.study-schedules.subjects-schedules.view') }}">{{__('messages.MATERIAL DISTRIBUTION SCHEDUALS')}}</a></li>
+							<li><a class="slide-item"  href="{{ url('/' . $page='main-structures.study-schedules.studytime-schedules.view') }}">{{__('messages.WORK SCHEDUALS')}}</a></li>
+							<li><a class="slide-item"  href="{{ url('/' . $page='main-structures.study-schedules.exams-schedules.view') }}">{{__('messages.TYPES OF ANNUAL EXAMINATION SCHEDUALS')}} </a></li>
 						</ul>
 					</li>
 					<li class="slide">
-						<a class="side-menu__item" href="{{ url('/' . $page='main-structures.courses.view') }}"><span class="side-menu__label"><i class="typcn typcn-briefcase"></i> الدورات التدريبية</span></a>
+						<a class="side-menu__item" href="{{ url('/' . $page='main-structures.courses.view') }}"><span class="side-menu__label"><i class="typcn typcn-briefcase"></i>{{__('messages.TRAINING COURSES')}} </span></a>
 					</li>
 					<li class="slide">
-						<a class="side-menu__item" href="{{ url('/' . $page='main-structures.requests.view') }}"><span class="side-menu__label"><i class="icon ion-md-filing"></i> الطلبات</span></a>
+						<a class="side-menu__item" href="{{ url('/' . $page='main-structures.requests.view') }}"><span class="side-menu__label"><i class="icon ion-md-filing"></i> {{__('messages.REQUESTS')}} </span></a>
 					</li>
-					<li class="side-item side-item-category">التوظيف </li>
+					<li class="side-item side-item-category">{{__('messages.EMPLOYEMENT')}} </li>
 					<li class="slide">
-						<a class="side-menu__item" href="{{ url('/' . $page='cvs.view') }}"><span class="side-menu__label"><i class="fa fa-file-alt"></i> السير الذاتية</span></a>
+						<a class="side-menu__item" href="{{ url('/' . $page='cvs.view') }}"><span class="side-menu__label"><i class="fa fa-file-alt"></i>{{__('messages.CVS')}}</span></a>
 					</li>
 					<li class="slide">
-						<a class="side-menu__item" href="{{ url('/' . $page='jobs.view') }}"><span class="side-menu__label"><i class="fa fa-briefcase"></i> فرص العمل</span></a>
+						<a class="side-menu__item" href="{{ url('/' . $page='jobs.view') }}"><span class="side-menu__label"><i class="fa fa-briefcase"></i> {{__('messages.JOBS')}}</span></a>
 					</li>
-					<li class="side-item side-item-category">الإعدادات </li>
+					<li class="side-item side-item-category">{{__('messages.SETTINGS')}} </li>
 					<li class="slide">
-						<a class="side-menu__item" href="{{ url('/' . $page='roles&permissions.view') }}"><span class="side-menu__label"><i class="icon ion-ios-settings"></i> الأدوار والصلاحيات </span></a>
+						<a class="side-menu__item" href="{{ url('/' . $page='roles&permissions.view') }}"><span class="side-menu__label"><i class="icon ion-ios-settings"></i> {{__('messages.ROLES & PERMISSIONS')}} </span></a>
 					</li>
 				</ul>
 					<!--
